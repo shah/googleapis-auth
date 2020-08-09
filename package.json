@@ -1,0 +1,40 @@
+{
+    "name": "@shah/googleapis-auth",
+    "version": "0.0.1",
+    "description": "Convenience wrapper for retrieving and storing cached Google API credentials",
+    "main": "dist/googleapis-auth.js",
+    "types": "dist/googleapis-auth.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "start": "ts-node test.ts",
+        "prepublishOnly": "tsc --project tsconfig.json",
+        "build": "tsc --project tsconfig.json",
+        "test": "ts-node test.ts"
+    },
+    "repository": {
+        "url": "git://github.com/shah/googleapis-auth.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "keywords": [
+        "googleapis",
+        "auth"
+    ],
+    "author": "Shahid N. Shah",
+    "license": "MIT",
+    "dependencies": {
+        "googleapis": "^56.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/shah/googleapis-auth/issues"
+    },
+    "homepage": "https://github.com/shah/googleapis-auth",
+    "devDependencies": {
+        "@types/node": "^14.0.26",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.7"
+    }
+}
